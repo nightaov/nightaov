@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PHÚC AOV - iOS Liquid Glass Mod Hub</title>
+
+    <!-- =========================================================================
+         🛠️ BẢNG CÀI ĐẶT NHANH (NẰM NGAY ĐẦU FILE - THAY LINK LÀ ĂN 100%)
+         Bạn chỉ cần dán link ảnh / link tải vào giữa 2 dấu nháy kép "" bên dưới
+         ========================================================================= -->
+    <script>
+        window.CAI_DAT_WEB = {
+            // 👇 1. THAY LINK LOGO MÀN HÌNH LOAD (HIỆN KHI MỚI VÀO WEB) Ở ĐÂY:
+            logoManHinhLoad: "https://i.ibb.co/Qv68ykM6/A9-EF44-C3-5-C89-4-D03-BC39-BC355-B33-BD74.png", // <--- THAY LINK LOGO MÀN HÌNH LOAD Ở ĐÂY
+
+            // 👇 2. THAY LINK LOGO TRÒN TO ĐẦU TRANG Ở ĐÂY:
+            logoDauTrang: "https://i.ibb.co/Qv68ykM6/A9-EF44-C3-5-C89-4-D03-BC39-BC355-B33-BD74.png",    // <--- THAY LINK LOGO ĐẦU TRANG Ở ĐÂY
+
+            // 👇 3. TÊN HIỂN THỊ & LINK 3 NÚT MẠNG XÃ HỘI (TELEGRAM, TIKTOK, DISCORD):
+            tenHienThi: "PHÚC AOV",                // <--- THAY TÊN CỦA BẠN Ở ĐÂY
+            dongChao: "Hi, I am",                  // <--- Dòng chữ nhỏ trên tên
+            ngheNghiep: "and I'm a iOS Develop",   // <--- Dòng chữ chạy dưới tên
+            linkTelegram: "https://t.me/",         // <--- THAY LINK TELEGRAM Ở ĐÂY
+            linkTikTok: "https://tiktok.com/",     // <--- THAY LINK TIKTOK Ở ĐÂY
+            linkDiscord: "https://discord.gg/",    // <--- THAY LINK DISCORD Ở ĐÂY
+
+            // 👇 4. NHẠC NỀN & THÔNG BÁO CHẠY CHỮ:
+            linkNhacNen: "https://raw.githubusercontent.com/Rxaovvip/web/refs/heads/main/cc.mp3", // <--- THAY LINK NHẠC MP3 Ở ĐÂY
+            thongBaoLive: "❄️ Cập nhật Hack Map Liên Quân, Free Fire & 8 Ball Pool (Android/iOS) mới nhất - Anti-Ban 100% An Toàn!",
+
+            // 👇 5. MÃ BỘ ĐẾM TRUY CẬP & CLICK (Đổi "v1" thành "v2" bất cứ khi nào muốn Reset số về 0):
+            counterNamespace: "phucaov_snow_hub_v1",
+
+            /* =====================================================================
+               👇 6. DANH MỤC GAME: LIÊN QUÂN | FREE FIRE | 8 BALL POOL
+               - Thay logo nút vuông mục nhỏ: Dán link ảnh vào dòng `icon: ""`
+               - Thay ảnh bìa to của từng bản: Dán link ảnh vào dòng `banner: ""`
+               - Thay Link Tải & Get Key: Dán link vào `linkTai` & `linkGetKey`
+               ===================================================================== */
+            categories: {
+
+                // ==================== MỤC 1: HACK LIÊN QUÂN ====================
+                "Hack Liên Quân": {
+                    icon: "", // <--- THAY LOGO NÚT NHỎ LIÊN QUÂN Ở ĐÂY (Để "" sẽ hiện Khiên LQ vàng)
+                    defaultType: "lq",
+                    items: [
+                        {
+                            id: "lq_adr_1",
+                            title: "HACK MAP LIÊN QUÂN ANDROID MỚI NHẤT 🔥",
+                            date: "01/11/2026",
+                            badge: "🤖 ADR",
+                            banner: "",                        // <--- THAY LINK ẢNH BANNER Ở ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        },
+                        {
+                            id: "lq_ios_1",
+                            title: "HACK MAP LIÊN QUÂN iOS NO JAILBREAK 🍎",
+                            date: "01/11/2026",
+                            badge: "🍎 iOS",
+                            banner: "",                        // <--- THAY LINK ẢNH BANNER Ở ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        }
+                    ]
+                },
+
+                // ==================== MỤC 2: HACK FREE FIRE ====================
+                "Hack Free Fire": {
+                    icon: "", // <--- THAY LOGO NÚT NHỎ FREE FIRE Ở ĐÂY (Để "" sẽ hiện Lửa FF)
+                    defaultType: "ff",
+                    items: [
+                        {
+                            id: "ff_adr_1",
+                            title: "MOD MENU FREE FIRE OB MỚI AUTO HEADSHOT 🔥",
+                            date: "01/11/2026",
+                            badge: "🤖 ADR",
+                            banner: "",                        // <--- THAY LINK ẢNH BANNER Ở ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        },
+                        {
+                            id: "ff_ios_1",
+                            title: "FILE AIMLOCK + ĐẠN THẲNG FREE FIRE iOS 🍎",
+                            date: "01/11/2026",
+                            badge: "🍎 iOS",
+                            banner: "",                        // <--- THAY LINK ẢNH BANNER Ở ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        }
+                    ]
+                },
+
+                // ==================== MỤC 3: HACK 8 BALL POOL ====================
+                "Hack 8 Ball Pool": {
+                    icon: "", // <--- THAY LOGO NÚT NHỎ 8 BALL POOL Ở ĐÂY (Để "" sẽ hiện Bi Số 8)
+                    defaultType: "8bp",
+                    items: [
+                        {
+                            id: "8bp_adr_1",
+                            title: "HACK 8 BALL POOL TIA DÀI + AUTO WIN ADR 🎱",
+                            date: "01/11/2026",
+                            badge: "🤖 ADR",
+                            banner: "",                        // <--- THAY LINK ẢNH BANNER Ở ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        },
+                        {
+                            id: "8bp_ios_1",
+                            title: "HACK 8 BALL POOL CHETO LONG LINE iOS 🍎",
+                            date: "01/11/2026",
+                            badge: "🍎 iOS",
+                            banner: "",                        // <--- THAY LINK ẢNH BANNER Ở ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        }
+                    ]
+                }
+            }
+        };
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root[data-theme="dark"] {
+            --bg-main: #060916;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --glass-bg: rgba(16, 24, 48, 0.56);
+            --glass-card: rgba(12, 19, 38, 0.72);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --glass-highlight: rgba(255, 255, 255, 0.38);
+            --glass-shadow: 0 14px 34px rgba(0, 0, 0, 0.55), inset 0 1px 1.5px rgba(255, 255, 255, 0.25);
+            --btn-key-bg: rgba(15, 23, 42, 0.75);
+            --snow-color: #e0f2fe;
+            --snow-glow: rgba(56, 189, 248, 0.9);
+        }
+
+        :root[data-theme="light"] {
+            --bg-main: #eaf2ff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --glass-bg: rgba(255, 255, 255, 0.68);
+            --glass-card: rgba(255, 255, 255, 0.82);
+            --glass-border: rgba(255, 255, 255, 0.92);
+            --glass-highlight: rgba(255, 255, 255, 0.98);
+            --glass-shadow: 0 12px 28px rgba(30, 41, 59, 0.1), inset 0 1.5px 2px rgba(255, 255, 255, 0.95);
+            --btn-key-bg: rgba(241, 245, 249, 0.9);
+            --snow-color: #0284c7;
+            --snow-glow: rgba(14, 165, 233, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background-color 0.35s ease, color 0.35s ease;
+            position: relative;
+            user-select: none;
+        }
+
+        @keyframes spin360 {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes spinReverse {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.06); opacity: 1; }
+        }
+
+        /* =========================================================
+           HIỆU ỨNG CỰC QUANG & TUYẾT RƠI (SNOWFALL) TOÀN TRANG
+        ========================================================== */
+        .aurora-bg {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .aurora-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            animation: floatBlob 14s infinite alternate ease-in-out;
+        }
+        .blob-1 { width: 290px; height: 290px; background: #ef4444; top: -60px; left: -70px; }
+        .blob-2 { width: 320px; height: 320px; background: #38bdf8; top: 30%; right: -90px; animation-delay: -4s; }
+        .blob-3 { width: 280px; height: 280px; background: #a855f7; bottom: -50px; left: 15%; animation-delay: -8s; }
+
+        @keyframes floatBlob {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, 35px) scale(1.12); }
+        }
+
+        #snowCanvas {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none !important;
+            z-index: 2147483646;
+        }
+
+        #snow-crystal-layer {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none !important;
+            z-index: 45;
+            overflow: hidden;
+        }
+        .snow-crystal {
+            position: absolute;
+            top: -40px;
+            color: var(--snow-color);
+            text-shadow: 0 0 8px var(--snow-glow);
+            pointer-events: none !important;
+            will-change: transform;
+            animation: crystalFall linear infinite;
+        }
+        @keyframes crystalFall {
+            0% { transform: translate3d(0, -5vh, 0) rotate(0deg); }
+            50% { transform: translate3d(var(--sway, 22px), 50vh, 0) rotate(180deg); }
+            100% { transform: translate3d(calc(var(--sway, 22px) * -0.6), 108vh, 0) rotate(360deg); }
+        }
+
+        /* =========================================================
+           CHUẨN iOS LIQUID GLASS
+        ========================================================== */
+        .liquid-glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(24px) saturate(190%);
+            -webkit-backdrop-filter: blur(24px) saturate(190%);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .liquid-card {
+            background: var(--glass-card);
+            backdrop-filter: blur(26px) saturate(190%);
+            -webkit-backdrop-filter: blur(26px) saturate(190%);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: 26px;
+            padding: 15px;
+        }
+
+        .app-wrap {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+            padding: 14px 14px 100px;
+        }
+
+        /* Thanh trên cùng */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        .pill-btn {
+            padding: 8px 13px;
+            border-radius: 999px;
+            font-size: 12.5px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            color: var(--text-primary);
+            transition: transform 0.18s ease;
+        }
+        .pill-btn:active { transform: scale(0.94); }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 8px #10b981;
+        }
+
+        /* Khung Avatar Tròn To + Hào Quang Lửa Cầu Vồng */
+        .profile-box {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .avatar-stage {
+            position: relative;
+            width: 142px;
+            height: 142px;
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fire-aura-outer {
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #ff2a00, #ff9900, #ffee00, #00e5ff, #a855f7, #ff0055, #ff2a00);
+            filter: blur(13px);
+            opacity: 0.88;
+            animation: spin360 3s linear infinite;
+        }
+        .fire-aura-inner {
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(from 180deg, #ef4444, #f59e0b, #38bdf8, #ec4899, #ef4444);
+            animation: spinReverse 2.2s linear infinite;
+        }
+        .hood-ring {
+            position: relative;
+            z-index: 3;
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(180deg, #ef4444 0%, #b91c1c 60%, #1e1b4b 100%);
+            box-shadow: 0 8px 24px rgba(239, 68, 68, 0.45), inset 0 2px 3px rgba(255,255,255,0.45);
+        }
+        .avatar-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.92);
+            background: #090d1a;
+            position: relative;
+        }
+        .avatar-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .avatar-circle::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -65%;
+            width: 48%;
+            height: 200%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
+            transform: rotate(25deg);
+            animation: shineSweep 3.5s infinite;
+        }
+        @keyframes shineSweep {
+            0% { left: -65%; }
+            35%, 100% { left: 145%; }
+        }
+
+        .verified-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 14px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: #818cf8;
+            margin-bottom: 5px;
+        }
+        .hi-text {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-secondary);
+        }
+        .name-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin: 2px 0;
+        }
+        .name-title {
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        .job-text {
+            font-size: 14px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #38bdf8, #f472b6, #fb923c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 14px;
+        }
+
+        /* Hàng nút vuông Icon-Only (Mạng xã hội & Danh mục Game) */
+        .icon-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+        .sq-btn {
+            width: 62px;
+            height: 62px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+        .sq-btn:active { transform: scale(0.92); }
+        .sq-btn.active-cat {
+            transform: translateY(-4px) scale(1.04);
+            background: linear-gradient(145deg, rgba(99, 102, 241, 0.45), rgba(249, 115, 22, 0.42));
+            border: 1.5px solid rgba(255, 255, 255, 0.92);
+            box-shadow: 0 12px 26px rgba(99, 102, 241, 0.5), 0 0 16px rgba(249, 115, 22, 0.4);
+        }
+        .cat-dot {
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 4px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #38bdf8, #f97316);
+            box-shadow: 0 0 8px #38bdf8;
+        }
+        .cat-count {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            min-width: 20px;
+            height: 20px;
+            padding: 0 5px;
+            border-radius: 999px;
+            font-size: 10.5px;
+            font-weight: 800;
+            color: #fff;
+            background: linear-gradient(135deg, #4f46e5, #ea580c);
+            border: 1.5px solid rgba(255,255,255,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Thanh LIVE chạy chữ */
+        .marquee-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 13px;
+            border-radius: 18px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+        .live-pill {
+            background: linear-gradient(135deg, #ef4444, #f97316);
+            color: #fff;
+            font-size: 10.5px;
+            font-weight: 900;
+            padding: 4px 10px;
+            border-radius: 999px;
+            flex-shrink: 0;
+        }
+        .marquee-wrap { overflow: hidden; white-space: nowrap; flex: 1; }
+        .marquee-content {
+            display: inline-block;
+            font-size: 12.5px;
+            font-weight: 700;
+            padding-left: 100%;
+            animation: marqueeMove 16s linear infinite;
+        }
+        @keyframes marqueeMove {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* 3 Ô Thống Kê */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+        .stat-box {
+            padding: 11px 6px;
+            border-radius: 18px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .stat-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 18%;
+            right: 18%;
+            height: 2.5px;
+            border-radius: 99px;
+            background: linear-gradient(90deg, #38bdf8, #a855f7, #f97316);
+        }
+        .stat-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 3px;
+        }
+        .stat-num {
+            font-size: 16px;
+            font-weight: 900;
+            transition: transform 0.2s ease;
+        }
+        .stat-num.pop { transform: scale(1.25); }
+
+        /* Ô Tìm Kiếm */
+        .search-input {
+            width: 100%;
+            padding: 11px 15px;
+            border-radius: 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            outline: none;
+            margin: 14px 0 16px;
+        }
+        .search-input::placeholder { color: var(--text-secondary); }
+
+        /* Danh sách Thẻ Script */
+        .cards-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .banner-box {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #080f20;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255,255,255,0.14);
+        }
+        .banner-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .badge-corner {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(9, 13, 26, 0.84);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            padding: 4px 11px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+            border: 1px solid rgba(255,255,255,0.22);
+        }
+        .meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .pill-working {
+            background: rgba(16, 185, 129, 0.16);
+            color: #10b981;
+            padding: 2px 9px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+        }
+        .pill-clicks {
+            background: rgba(249, 115, 22, 0.16);
+            color: #f97316;
+            padding: 2px 9px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+        }
+        .script-title {
+            font-size: 16.5px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 13px;
+            line-height: 1.35;
+            text-transform: uppercase;
+        }
+        .btn-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .action-btn {
+            padding: 12px 10px;
+            border-radius: 15px;
+            font-size: 13.5px;
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: transform 0.18s ease;
+        }
+        .action-btn:active { transform: scale(0.95); }
+        .btn-dl {
+            background: linear-gradient(90deg, #4f46e5 0%, #9333ea 52%, #ea580c 100%);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.35);
+            box-shadow: 0 6px 18px rgba(147, 51, 234, 0.38);
+        }
+        .btn-key {
+            background: var(--btn-key-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Đĩa nhạc góc trái dưới */
+        .music-btn {
+            position: fixed;
+            bottom: 16px;
+            left: 16px;
+            z-index: 60;
+            padding: 8px 14px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .music-disc {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #ec4899, #f97316);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =========================================================================
+         1. MÀN HÌNH LOAD 3.5 GIÂY (INLINE CSS TRỰC TIẾP - LUÔN HIỆN 100%)
+         Bạn có thể sửa link ảnh trực tiếp ở src="" bên dưới hoặc ở CAI_DAT_WEB
+         ========================================================================= -->
+    <div id="loader-overlay" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at center, #131c38 0%, #050711 100%); z-index: 2147483647; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; opacity: 1; visibility: visible; transition: opacity 0.55s ease, visibility 0.55s ease;">
+        <div style="position: relative; width: 132px; height: 132px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <!-- Vòng hào quang lửa xoay -->
+            <div style="position: absolute; inset: -8px; border-radius: 50%; background: conic-gradient(from 0deg, #ff2a00, #ffae00, #00e5ff, #a855f7, #ff0055, #ff2a00); filter: blur(8px); animation: spin360 1.8s linear infinite;"></div>
+            <!-- Vòng nét đứt xoay ngược -->
+            <div style="position: absolute; inset: 0px; border-radius: 50%; border: 2.5px dashed #38bdf8; animation: spinReverse 3.2s linear infinite; z-index: 2;"></div>
+            <!-- Ảnh Logo Màn Hình Load -->
+            <img id="loader-img"
+                 src="https://i.ibb.co/Qv68ykM6/A9-EF44-C3-5-C89-4-D03-BC39-BC355-B33-BD74.png"
+                 alt="Loader Logo"
+                 style="position: relative; z-index: 3; width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; background: #090d1a; box-shadow: 0 0 28px rgba(56, 189, 248, 0.5);">
+        </div>
+
+        <div style="padding: 4px 14px; border-radius: 999px; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
+            ❄️ SYSTEM INITIALIZING
+        </div>
+
+        <div id="loader-title" style="color: #ffffff; font-size: 22px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; text-shadow: 0 0 16px rgba(56, 189, 248, 0.5);">
+            PHÚC AOV VIP HUB
+        </div>
+
+        <div id="loader-status" style="color: #94a3b8; font-size: 12.5px; font-weight: 700; margin-bottom: 16px; text-align: center;">
+            Đang tải tài nguyên & bảo mật Anti-Ban...
+        </div>
+
+        <!-- Thanh Tiến Trình Liquid Glass -->
+        <div style="width: 250px; height: 11px; background: rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 2px; border: 1px solid rgba(255, 255, 255, 0.22); overflow: hidden; box-shadow: inset 0 1px 3px rgba(0,0,0,0.6);">
+            <div id="loader-bar" style="height: 100%; width: 0%; border-radius: 999px; background: linear-gradient(90deg, #ef4444, #f97316, #a855f7, #38bdf8); box-shadow: 0 0 12px rgba(56, 189, 248, 0.8); transition: width 0.04s linear;"></div>
+        </div>
+
+        <div style="width: 250px; display: flex; justify-content: space-between; align-items: center; margin-top: 8px; padding: 0 4px;">
+            <span style="color: #64748b; font-size: 11px; font-weight: 800; text-transform: uppercase;">iOS Liquid Glass</span>
+            <span id="loader-pct" style="color: #38bdf8; font-size: 13px; font-weight: 900;">0%</span>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         2. LỚP HIỆU ỨNG CỰC QUANG & TUYẾT RƠI (SNOWFALL) TOÀN TRANG
+         ========================================================================= -->
+    <div class="aurora-bg">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+    </div>
+    <canvas id="snowCanvas"></canvas>
+    <div id="snow-crystal-layer"></div>
+
+    <!-- =========================================================================
+         3. GIAO DIỆN CHÍNH
+         ========================================================================= -->
+    <main class="app-wrap">
+
+        <!-- Thanh Trên Cùng: Đồng Hồ + Nút Xem Lại Màn Load + Nút Đổi Giao Diện -->
+        <div class="top-bar">
+            <div class="pill-btn liquid-glass" onclick="replayLoadingScreen()" title="Bấm để xem lại màn hình Load">
+                <span class="live-dot"></span>
+                <span id="clock-text">Morning! 00:00:00 ☀️</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <button type="button" class="pill-btn liquid-glass" onclick="replayLoadingScreen()" title="Xem lại màn hình Load">
+                    <span>🔄</span>
+                    <span>Load</span>
+                </button>
+                <button type="button" class="pill-btn liquid-glass" onclick="toggleTheme()">
+                    <span id="theme-icon">☀️</span>
+                    <span id="theme-label">Light</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hồ Sơ Cá Nhân & Logo Tròn To Đầu Trang -->
+        <section class="profile-box">
+            <div class="avatar-stage">
+                <div class="fire-aura-outer"></div>
+                <div class="fire-aura-inner"></div>
+                <div class="hood-ring">
+                    <div class="avatar-circle">
+                        <!-- Bạn có thể sửa link trực tiếp ở src="" dưới đây hoặc ở CAI_DAT_WEB.logoDauTrang -->
+                        <img id="main-avatar"
+                             src="https://i.ibb.co/Qv68ykM6/A9-EF44-C3-5-C89-4-D03-BC39-BC355-B33-BD74.png"
+                             alt="Avatar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="verified-pill liquid-glass">
+                <span style="width: 6px; height: 6px; border-radius: 50%; background: #818cf8; display: inline-block;"></span>
+                <span>Verified Hub</span>
+            </div>
+
+            <div id="profile-hi" class="hi-text">Hi, I am</div>
+
+            <div class="name-row">
+                <h1 id="profile-name" class="name-title">PHÚC AOV</h1>
+                <svg style="width: 23px; height: 23px; color: #3897f0; filter: drop-shadow(0 0 6px rgba(56,151,240,0.6));" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.9 14.7L6 12.6l1.5-1.5 2.6 2.6 6.4-6.4 1.5 1.5-7.9 7.9z"/>
+                </svg>
+            </div>
+
+            <div id="profile-job" class="job-text">and I'm a iOS Develop</div>
+
+            <!-- 3 Nút Mạng Xã Hội: Telegram - TikTok - Discord -->
+            <div class="icon-row">
+                <a id="btn-telegram" href="https://t.me/" target="_blank" rel="noopener noreferrer" class="sq-btn liquid-glass" title="Telegram">
+                    <div style="width: 42px; height: 42px; border-radius: 50%; background: #24A1DE; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(36,161,222,0.55);">
+                        <svg style="width: 22px; height: 22px; color: #fff;" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <a id="btn-tiktok" href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" class="sq-btn liquid-glass" title="TikTok">
+                    <div style="width: 42px; height: 42px; border-radius: 50%; background: #090d16; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(254,44,85,0.45);">
+                        <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none">
+                            <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" fill="#ffffff" style="filter: drop-shadow(-1.5px -1px 0px #25F4EE) drop-shadow(1.5px 1.5px 0px #FE2C55);"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <a id="btn-discord" href="https://discord.gg/" target="_blank" rel="noopener noreferrer" class="sq-btn liquid-glass" title="Discord">
+                    <div style="width: 42px; height: 42px; border-radius: 50%; background: #5865F2; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(88,101,242,0.55);">
+                        <svg style="width: 22px; height: 22px; color: #fff;" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Thanh Thông Báo LIVE -->
+        <div class="marquee-bar liquid-glass">
+            <span class="live-pill">⚡ LIVE</span>
+            <div class="marquee-wrap">
+                <span id="marquee-content" class="marquee-content"></span>
+            </div>
+        </div>
+
+        <!-- 3 Ô Thống Kê (Bắt đầu từ 0 & Tự nhảy thật trên GitHub) -->
+        <div class="stats-grid">
+            <div class="stat-box liquid-glass">
+                <div class="stat-label">Đã Truy Cập</div>
+                <div id="stat-visited" class="stat-num" style="color: #10b981;">0</div>
+            </div>
+            <div class="stat-box liquid-glass">
+                <div class="stat-label">🛡️ Bảo Mật</div>
+                <div class="stat-num" style="color: #38bdf8; font-size: 13.5px;">Undetected</div>
+            </div>
+            <div class="stat-box liquid-glass">
+                <div class="stat-label">Tổng Lấy Script</div>
+                <div id="stat-clicks" class="stat-num" style="color: #f97316;">0</div>
+            </div>
+        </div>
+
+        <!-- Danh Mục Game VIP (Nút vuông chỉ hiện Logo: Liên Quân | Free Fire | 8 Ball Pool | Tất Cả) -->
+        <div style="text-align: center; margin-bottom: 8px;">
+            <div style="font-size: 15.5px; font-weight: 900; letter-spacing: 0.6px; text-transform: uppercase;">
+                • DANH MỤC GAME VIP •
+            </div>
+            <div style="width: 72px; height: 3.5px; border-radius: 99px; background: linear-gradient(90deg, #38bdf8, #a855f7, #f97316); margin: 5px auto 14px;"></div>
+
+            <div id="category-row" class="icon-row" style="padding-bottom: 6px;"></div>
+
+            <input id="search-input"
+                   type="text"
+                   class="search-input liquid-glass"
+                   placeholder="🔍 Tìm nhanh bản Hack Liên Quân, Free Fire, 8 Ball Pool..."
+                   oninput="renderCards()">
+        </div>
+
+        <!-- Danh Sách Bảng Script -->
+        <div id="cards-container" class="cards-stack"></div>
+
+    </main>
+
+    <!-- Nút Nhạc Nền Góc Trái Dưới -->
+    <div class="music-btn liquid-glass" onclick="toggleMusicManual(event)">
+        <div id="music-disc" class="music-disc">🎵</div>
+        <span id="music-label">Nhạc: Chạm bật</span>
+    </div>
+    <audio id="bg-audio" loop preload="auto" playsinline></audio>
+
+    <!-- Toast Thông Báo -->
+    <div id="toast-msg" class="liquid-glass" style="position: fixed; top: 18px; left: 50%; transform: translateX(-50%); z-index: 9999; padding: 9px 18px; border-radius: 999px; font-size: 12.5px; font-weight: 800; opacity: 0; pointer-events: none; transition: opacity 0.3s ease;">
+        🚀 Đang mở liên kết...
+    </div>
+
+    <script>
+        /* =========================================================================
+           1. ĐỒNG BỘ LOGO & MÀN HÌNH LOAD 3.5 GIÂY (KHÔNG BAO GIỜ BỊ MẤT)
+           ========================================================================= */
+        const DEFAULT_PRESET_LOGO = "https://i.ibb.co/Qv68ykM6/A9-EF44-C3-5-C89-4-D03-BC39-BC355-B33-BD74.png";
+        let loaderTimer = null;
+
+        function applyCustomBranding() {
+            const cfg = window.CAI_DAT_WEB || {};
+            const loaderImg = document.getElementById("loader-img");
+            const mainAvatar = document.getElementById("main-avatar");
+
+            // Hỗ trợ cả 2 cách: Sửa ở CAI_DAT_WEB hoặc sửa trực tiếp trong thẻ <img> HTML
+            const htmlLoaderSrc = loaderImg ? loaderImg.getAttribute("src") : "";
+            const htmlMainSrc = mainAvatar ? mainAvatar.getAttribute("src") : "";
+
+            if (loaderImg) {
+                if (htmlLoaderSrc && htmlLoaderSrc !== DEFAULT_PRESET_LOGO) {
+                    loaderImg.src = htmlLoaderSrc;
+                } else if (cfg.logoManHinhLoad && cfg.logoManHinhLoad.trim() !== "") {
+                    loaderImg.src = cfg.logoManHinhLoad.trim();
+                }
+            }
+
+            if (mainAvatar) {
+                if (htmlMainSrc && htmlMainSrc !== DEFAULT_PRESET_LOGO) {
+                    mainAvatar.src = htmlMainSrc;
+                } else if (cfg.logoDauTrang && cfg.logoDauTrang.trim() !== "") {
+                    mainAvatar.src = cfg.logoDauTrang.trim();
+                }
+            }
+
+            if (cfg.tenHienThi) {
+                document.getElementById("profile-name").textContent = cfg.tenHienThi;
+                document.getElementById("loader-title").textContent = cfg.tenHienThi + " VIP HUB";
+            }
+            if (cfg.dongChao) document.getElementById("profile-hi").textContent = cfg.dongChao;
+            if (cfg.ngheNghiep) document.getElementById("profile-job").textContent = cfg.ngheNghiep;
+            if (cfg.linkTelegram) document.getElementById("btn-telegram").href = cfg.linkTelegram;
+            if (cfg.linkTikTok) document.getElementById("btn-tiktok").href = cfg.linkTikTok;
+            if (cfg.linkDiscord) document.getElementById("btn-discord").href = cfg.linkDiscord;
+            if (cfg.thongBaoLive) document.getElementById("marquee-content").textContent = cfg.thongBaoLive;
+        }
+
+        function startLoadingSequence() {
+            const overlay = document.getElementById("loader-overlay");
+            const bar = document.getElementById("loader-bar");
+            const pctTxt = document.getElementById("loader-pct");
+            const statusTxt = document.getElementById("loader-status");
+            if (!overlay) return;
+
+            if (loaderTimer) clearInterval(loaderTimer);
+
+            // Hiển thị rõ màn hình load từ 0%
+            overlay.style.display = "flex";
+            overlay.style.opacity = "1";
+            overlay.style.visibility = "visible";
+            overlay.style.pointerEvents = "auto";
+            if (bar) bar.style.width = "0%";
+            if (pctTxt) pctTxt.textContent = "0%";
+            if (statusTxt) statusTxt.textContent = "Đang tải tài nguyên & bảo mật Anti-Ban...";
+
+            let pct = 0;
+            // Đợi trình duyệt vẽ xong khung đầu tiên rồi đếm từ 0% -> 100% trong 3.5 giây
+            setTimeout(() => {
+                loaderTimer = setInterval(() => {
+                    pct += 1;
+                    if (pct > 100) pct = 100;
+                    if (bar) bar.style.width = pct + "%";
+                    if (pctTxt) pctTxt.textContent = pct + "%";
+
+                    if (pct === 45 && statusTxt) {
+                        statusTxt.textContent = "Đang kích hoạt giao diện iOS Liquid Glass...";
+                    } else if (pct === 85 && statusTxt) {
+                        statusTxt.textContent = "Hoàn tất! Đang mở Hub VIP...";
+                    }
+
+                    if (pct >= 100) {
+                        clearInterval(loaderTimer);
+                        setTimeout(() => {
+                            overlay.style.opacity = "0";
+                            overlay.style.visibility = "hidden";
+                            overlay.style.pointerEvents = "none";
+                        }, 250);
+                    }
+                }, 32);
+            }, 150);
+        }
+
+        function replayLoadingScreen() {
+            applyCustomBranding();
+            startLoadingSequence();
+        }
+
+        /* =========================================================================
+           2. HIỆU ỨNG TUYẾT RƠI (SNOWFALL CANVAS + BÔNG TUYẾT ❄ ❅ ❆)
+           ========================================================================= */
+        (function initSnowfallEffect() {
+            // Lớp 1: Bông tuyết tinh thể ❄ ❅ ❆
+            const crystalLayer = document.getElementById("snow-crystal-layer");
+            if (crystalLayer) {
+                const chars = ["❄", "❅", "❆", "•"];
+                for (let i = 0; i < 28; i++) {
+                    const span = document.createElement("span");
+                    span.className = "snow-crystal";
+                    span.textContent = chars[i % chars.length];
+                    span.style.left = (Math.random() * 100) + "vw";
+                    span.style.fontSize = (10 + Math.random() * 12) + "px";
+                    span.style.opacity = (0.4 + Math.random() * 0.55).toFixed(2);
+                    span.style.setProperty("--sway", ((Math.random() > 0.5 ? 1 : -1) * (15 + Math.random() * 25)) + "px");
+                    span.style.animationDuration = (6 + Math.random() * 7) + "s";
+                    span.style.animationDelay = (-Math.random() * 12) + "s";
+                    crystalLayer.appendChild(span);
+                }
+            }
+
+            // Lớp 2: Hạt tuyết mịn Canvas 60fps (hiển thị cả trên màn hình Load)
+            const canvas = document.getElementById("snowCanvas");
+            if (!canvas) return;
+            const ctx = canvas.getContext("2d");
+            let flakes = [];
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            window.addEventListener("resize", resize);
+            resize();
+
+            for (let i = 0; i < 45; i++) {
+                flakes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    r: Math.random() * 2.2 + 0.8,
+                    vx: (Math.random() - 0.5) * 0.6,
+                    vy: Math.random() * 1.1 + 0.5,
+                    alpha: Math.random() * 0.55 + 0.25
+                });
+            }
+
+            function drawSnow() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < flakes.length; i++) {
+                    const f = flakes[i];
+                    ctx.beginPath();
+                    ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(224, 242, 254, ${f.alpha})`;
+                    ctx.fill();
+
+                    f.x += f.vx;
+                    f.y += f.vy;
+                    if (f.y > canvas.height + 5) {
+                        f.y = -5;
+                        f.x = Math.random() * canvas.width;
+                    }
+                    if (f.x > canvas.width + 5) f.x = -5;
+                    if (f.x < -5) f.x = canvas.width + 5;
+                }
+                requestAnimationFrame(drawSnow);
+            }
+            drawSnow();
+        })();
+
+        /* =========================================================================
+           3. DANH MỤC GAME NÚT VUÔNG ICON-ONLY & DANH SÁCH THẺ SCRIPT
+           ========================================================================= */
+        const ALL_CAT = "__ALL__";
+        let activeCategory = Object.keys((window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {})[0] || ALL_CAT;
+        const STORAGE_PREFIX = ((window.CAI_DAT_WEB && window.CAI_DAT_WEB.counterNamespace) || "phucaov_v1") + "_";
+
+        function getCategoryIconMarkup(catName, catObj) {
+            if (catObj && catObj.icon && catObj.icon.trim() !== "") {
+                return `<img src="${catObj.icon.trim()}" alt="${catName}" style="width: 42px; height: 42px; border-radius: 13px; object-fit: cover;">`;
+            }
+
+            if (catName === ALL_CAT) {
+                return `
+                <div style="width: 42px; height: 42px; border-radius: 13px; background: #0c162d; border: 1px solid rgba(56,189,248,0.4); display: flex; align-items: center; justify-content: center;">
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="3" width="7.5" height="7.5" rx="2" fill="#38bdf8"/>
+                        <rect x="13.5" y="3" width="7.5" height="7.5" rx="2" fill="#a855f7"/>
+                        <rect x="3" y="13.5" width="7.5" height="7.5" rx="2" fill="#f97316"/>
+                        <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2" fill="#22c55e"/>
+                    </svg>
+                </div>`;
+            }
+
+            const t = (catObj && catObj.defaultType) || "";
+            if (t === "8bp" || catName.toLowerCase().includes("8 ball")) {
+                return `
+                <div style="width: 42px; height: 42px; border-radius: 13px; background: #090d16; border: 1px solid rgba(56,189,248,0.5); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 12px rgba(56,189,248,0.35);">
+                    <svg style="width: 30px; height: 30px;" viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="25" fill="#050811" stroke="#38bdf8" stroke-width="2.5"/>
+                        <circle cx="32" cy="32" r="11.5" fill="#ffffff"/>
+                        <text x="32" y="37" text-anchor="middle" fill="#050811" font-size="15" font-weight="900">8</text>
+                    </svg>
+                </div>`;
+            }
+
+            if (t === "ff" || catName.toLowerCase().includes("free fire")) {
+                return `
+                <div style="width: 42px; height: 42px; border-radius: 13px; background: #2a0a10; border: 1px solid rgba(249,115,22,0.5); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 12px rgba(249,115,22,0.4);">
+                    <svg style="width: 26px; height: 26px;" viewBox="0 0 64 64" fill="none">
+                        <path d="M34 7 C39 18 52 22 50 38 C48 49 39 56 32 57 C23 56 14 48 14 36 C14 27 21 20 24 15 C23 23 27 26 29 23 C31 19 31 12 34 7 Z" fill="#f97316"/>
+                        <path d="M32 18 L39 34 L32 52 L25 34 Z" fill="#fef08a"/>
+                    </svg>
+                </div>`;
+            }
+
+            return `
+            <div style="width: 42px; height: 42px; border-radius: 13px; background: #111c38; border: 1px solid rgba(245,158,11,0.5); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 12px rgba(245,158,11,0.4);">
+                <svg style="width: 26px; height: 26px;" viewBox="0 0 64 64" fill="none">
+                    <path d="M32 6 L54 15 L49 41 L32 58 L15 41 L10 15 Z" fill="#f59e0b"/>
+                    <path d="M32 11 L48 18 L44 39 L32 52 L20 39 L16 18 Z" fill="#0c1938"/>
+                    <polygon points="32,18 41,29 32,43 23,29" fill="#38bdf8"/>
+                </svg>
+            </div>`;
+        }
+
+        function renderCategories() {
+            const row = document.getElementById("category-row");
+            if (!row) return;
+            row.innerHTML = "";
+
+            const cats = (window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {};
+            const keys = Object.keys(cats);
+            let totalCount = 0;
+            keys.forEach(k => { totalCount += ((cats[k] && cats[k].items) || []).length; });
+
+            [...keys, ALL_CAT].forEach(key => {
+                const isAll = (key === ALL_CAT);
+                const catObj = isAll ? {} : cats[key];
+                const count = isAll ? totalCount : ((catObj.items || []).length);
+                const isActive = (activeCategory === key);
+
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "sq-btn liquid-glass" + (isActive ? " active-cat" : "");
+                btn.title = isAll ? "Tất Cả" : key;
+                btn.onclick = () => {
+                    activeCategory = key;
+                    renderCategories();
+                    renderCards();
+                };
+                btn.innerHTML = `
+                    ${getCategoryIconMarkup(key, catObj)}
+                    <span class="cat-count">${count}</span>
+                    ${isActive ? '<span class="cat-dot"></span>' : ''}
+                `;
+                row.appendChild(btn);
+            });
+        }
+
+        function formatNum(n) {
+            return Number(n || 0).toLocaleString("en-US");
+        }
+
+        function renderCards() {
+            const container = document.getElementById("cards-container");
+            if (!container) return;
+            container.innerHTML = "";
+
+            const cats = (window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {};
+            const keyword = (document.getElementById("search-input")?.value || "").trim().toLowerCase();
+            let list = [];
+
+            if (activeCategory === ALL_CAT) {
+                Object.keys(cats).forEach(catName => {
+                    (cats[catName].items || []).forEach(it => list.push({ ...it, _catName: catName }));
+                });
+            } else if (cats[activeCategory]) {
+                list = (cats[activeCategory].items || []).map(it => ({ ...it, _catName: activeCategory }));
+            }
+
+            if (keyword) {
+                list = list.filter(it =>
+                    (it.title || "").toLowerCase().includes(keyword) ||
+                    (it._catName || "").toLowerCase().includes(keyword)
+                );
+            }
+
+            list.forEach((item, idx) => {
+                const itemId = item.id || ("item_" + idx);
+                const savedClicks = parseInt(localStorage.getItem(STORAGE_PREFIX + "item_" + itemId) || "0", 10);
+                const dlUrl = item.linkTai || item.downloadLink || "#";
+                const keyUrl = item.linkGetKey || item.keyLink || "#";
+
+                const bannerHtml = (item.banner && item.banner.trim() !== "")
+                    ? `<img src="${item.banner.trim()}" alt="${item.title}">`
+                    : `<div style="width: 100%; height: 100%; background: linear-gradient(135deg, #132347 0%, #070d1d 100%); display: flex; align-items: center; justify-content: center; padding: 16px;">
+                           <span style="color: #38bdf8; font-weight: 900; font-size: 23px; letter-spacing: 1.5px; text-transform: uppercase; text-shadow: 0 0 14px rgba(56,189,248,0.5);">
+                               ${item._catName || "HACK VIP"}
+                           </span>
+                       </div>`;
+
+                const badgeHtml = (item.badge && item.badge.trim() !== "")
+                    ? `<div class="badge-corner">${item.badge}</div>`
+                    : "";
+
+                const card = document.createElement("div");
+                card.className = "liquid-card";
+                card.innerHTML = `
+                    <div class="banner-box">
+                        ${bannerHtml}
+                        ${badgeHtml}
+                    </div>
+                    <div class="meta-row">
+                        <span>📅 Ngày up: <strong>${item.date}</strong></span>
+                        <span class="pill-working">Working</span>
+                        <span id="item-clicks-${itemId}" class="pill-clicks">🔥 ${formatNum(savedClicks)} lượt lấy</span>
+                    </div>
+                    <div class="script-title">${item.title}</div>
+                    <div class="btn-grid">
+                        <a href="${dlUrl}" target="_blank" rel="noopener noreferrer"
+                           class="action-btn btn-dl"
+                           onclick="handleScriptClick('${itemId}', 'Link Tải')">
+                            <span>Link Tải</span>
+                            <span>📥</span>
+                        </a>
+                        <a href="${keyUrl}" target="_blank" rel="noopener noreferrer"
+                           class="action-btn btn-key"
+                           onclick="handleScriptClick('${itemId}', 'Get Key')">
+                            <span>🔑</span>
+                            <span>Get Key</span>
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        /* =========================================================================
+           4. BỘ ĐẾM TRUY CẬP & LẤY SCRIPT THẬT BẮT ĐẦU TỪ 0 (TỰ NHẢY TRÊN GITHUB)
+           ========================================================================= */
+        let visitedCount = parseInt(localStorage.getItem(STORAGE_PREFIX + "visited") || "0", 10);
+        let totalClicksCount = parseInt(localStorage.getItem(STORAGE_PREFIX + "clicks") || "0", 10);
+
+        function updateCounterUI(popId) {
+            const vEl = document.getElementById("stat-visited");
+            const cEl = document.getElementById("stat-clicks");
+            if (vEl) vEl.textContent = formatNum(visitedCount);
+            if (cEl) cEl.textContent = formatNum(totalClicksCount);
+
+            if (popId) {
+                const target = document.getElementById(popId);
+                if (target) {
+                    target.classList.add("pop");
+                    setTimeout(() => target.classList.remove("pop"), 220);
+                }
+            }
+        }
+
+        async function initRealCounters() {
+            visitedCount += 1;
+            localStorage.setItem(STORAGE_PREFIX + "visited", visitedCount);
+            updateCounterUI("stat-visited");
+
+            const ns = encodeURIComponent((window.CAI_DAT_WEB && window.CAI_DAT_WEB.counterNamespace) || "phucaov_v1");
+            try {
+                const resV = await fetch(`https://api.counterapi.dev/v1/${ns}/visits/up`);
+                if (resV.ok) {
+                    const dataV = await resV.json();
+                    if (typeof dataV.count === "number") {
+                        visitedCount = Math.max(visitedCount, dataV.count);
+                        localStorage.setItem(STORAGE_PREFIX + "visited", visitedCount);
+                        updateCounterUI("stat-visited");
+                    }
+                }
+            } catch (e) {}
+
+            try {
+                const resC = await fetch(`https://api.counterapi.dev/v1/${ns}/clicks/`);
+                if (resC.ok) {
+                    const dataC = await resC.json();
+                    if (typeof dataC.count === "number") {
+                        totalClicksCount = Math.max(totalClicksCount, dataC.count);
+                        localStorage.setItem(STORAGE_PREFIX + "clicks", totalClicksCount);
+                        updateCounterUI();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        async function handleScriptClick(itemId, label) {
+            totalClicksCount += 1;
+            localStorage.setItem(STORAGE_PREFIX + "clicks", totalClicksCount);
+            updateCounterUI("stat-clicks");
+
+            const itemKey = STORAGE_PREFIX + "item_" + itemId;
+            const nextVal = parseInt(localStorage.getItem(itemKey) || "0", 10) + 1;
+            localStorage.setItem(itemKey, nextVal);
+            const badge = document.getElementById("item-clicks-" + itemId);
+            if (badge) badge.textContent = "🔥 " + formatNum(nextVal) + " lượt lấy";
+
+            const toast = document.getElementById("toast-msg");
+            if (toast) {
+                toast.textContent = "🚀 Đang mở " + label + "...";
+                toast.style.opacity = "1";
+                setTimeout(() => { toast.style.opacity = "0"; }, 1800);
+            }
+
+            const ns = encodeURIComponent((window.CAI_DAT_WEB && window.CAI_DAT_WEB.counterNamespace) || "phucaov_v1");
+            try {
+                const res = await fetch(`https://api.counterapi.dev/v1/${ns}/clicks/up`);
+                if (res.ok) {
+                    const data = await res.json();
+                    if (typeof data.count === "number") {
+                        totalClicksCount = Math.max(totalClicksCount, data.count);
+                        localStorage.setItem(STORAGE_PREFIX + "clicks", totalClicksCount);
+                        updateCounterUI();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        /* =========================================================================
+           5. ĐỒNG HỒ GIỜ VIỆT NAM, SÁNG/TỐI & NHẠC NỀN TỰ PHÁT KHI CHẠM
+           ========================================================================= */
+        function updateClock() {
+            const now = new Date();
+            const vn = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" }));
+            const h = vn.getHours();
+            const m = String(vn.getMinutes()).padStart(2, "0");
+            const s = String(vn.getSeconds()).padStart(2, "0");
+            const hh = String(h).padStart(2, "0");
+
+            let label = "Night!";
+            let icon = "🌙";
+            if (h >= 5 && h < 11) { label = "Morning!"; icon = "☀️"; }
+            else if (h >= 11 && h < 14) { label = "Noon!"; icon = "🌤️"; }
+            else if (h >= 14 && h < 18) { label = "Afternoon!"; icon = "⛅"; }
+
+            const el = document.getElementById("clock-text");
+            if (el) el.textContent = `${label} ${hh}:${m}:${s} ${icon}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        function toggleTheme() {
+            const root = document.documentElement;
+            const isDark = root.getAttribute("data-theme") === "dark";
+            root.setAttribute("data-theme", isDark ? "light" : "dark");
+            document.getElementById("theme-icon").textContent = isDark ? "🌙" : "☀️";
+            document.getElementById("theme-label").textContent = isDark ? "Dark" : "Light";
+        }
+
+        const audioEl = document.getElementById("bg-audio");
+        if (audioEl && window.CAI_DAT_WEB && window.CAI_DAT_WEB.linkNhacNen) {
+            audioEl.src = window.CAI_DAT_WEB.linkNhacNen;
+        }
+        let musicStarted = false;
+
+        function unlockAudio() {
+            if (musicStarted || !audioEl) return;
+            audioEl.volume = 1.0;
+            audioEl.play().then(() => {
+                musicStarted = true;
+                document.getElementById("music-disc").style.animation = "spin360 3s linear infinite";
+                document.getElementById("music-label").textContent = "Nhạc: Đang phát";
+            }).catch(() => {});
+        }
+        ["touchstart", "touchend", "click"].forEach(evt => {
+            document.addEventListener(evt, unlockAudio, { passive: true });
+        });
+
+        function toggleMusicManual(e) {
+            if (e) e.stopPropagation();
+            if (!audioEl) return;
+            if (audioEl.paused) {
+                audioEl.play();
+                musicStarted = true;
+                document.getElementById("music-disc").style.animation = "spin360 3s linear infinite";
+                document.getElementById("music-label").textContent = "Nhạc: Đang phát";
+            } else {
+                audioEl.pause();
+                document.getElementById("music-disc").style.animation = "none";
+                document.getElementById("music-label").textContent = "Nhạc: Đã tắt";
+            }
+        }
+
+        // Khởi chạy ngay lập tức
+        applyCustomBranding();
+        startLoadingSequence();
+        renderCategories();
+        renderCards();
+        initRealCounters();
+    </script>
+</body>
+</html>
