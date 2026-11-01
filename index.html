@@ -1034,9 +1034,9 @@
         let activeCategory = Object.keys((window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {})[0] || ALL_CAT;
         const STORAGE_PREFIX = ((window.CAI_DAT_WEB && window.CAI_DAT_WEB.counterNamespace) || "phucaov_v1") + "_";
 
-        function getCategoryIconMarkup(catName, catObj) {
+                function getCategoryIconMarkup(catName, catObj) {
             if (catObj && catObj.icon && catObj.icon.trim() !== "") {
-                return `<img src="${catObj.icon.trim()}" alt="${catName}" style="width: 42px; height: 42px; border-radius: 13px; object-fit: cover;">`;
+                return `<div style="width: 42px; height: 42px; border-radius: 13px; overflow: hidden; display: flex; align-items: center; justify-content: center;"><img src="${catObj.icon.trim()}" alt="${catName}" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>`;
             }
 
             if (catName === ALL_CAT) {
