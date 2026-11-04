@@ -29,11 +29,8 @@
             linkNhacNen: "https://raw.githubusercontent.com/Rxaovvip/web/refs/heads/main/cc.mp3", // <--- THAY LINK NHẠC MP3 Ở ĐÂY
             thongBaoLive: "❄️ Cập nhật Hack Map Liên Quân, Free Fire & 8 Ball Pool (Android/iOS) mới nhất - Anti-Ban 100% An Toàn!",
 
-            // 👇 5. MÃ BỘ ĐẾM TRUY CẬP & CLICK (Đổi "v1" thành "v2" bất cứ khi nào muốn Reset số về 0):
-            counterNamespace: "nightaov_snow_hub_v1",
-
             /* =====================================================================
-               👇 6. DANH MỤC GAME: LIÊN QUÂN | FREE FIRE | 8 BALL POOL
+               👇 5. DANH MỤC GAME: LIÊN QUÂN | FREE FIRE | 8 BALL POOL
                - Thay logo nút vuông mục nhỏ: Dán link ảnh vào dòng `icon: ""`
                - Thay ảnh bìa to của từng bản: Dán link ảnh vào dòng `banner: ""`
                - Thay Link Tải & Get Key: Dán link vào `linkTai` & `linkGetKey`
@@ -465,7 +462,7 @@
             gap: 10px;
             padding: 9px 13px;
             border-radius: 18px;
-            margin-bottom: 14px;
+            margin-bottom: 18px;
             overflow: hidden;
         }
         .live-pill {
@@ -489,43 +486,6 @@
             0% { transform: translateX(0); }
             100% { transform: translateX(-100%); }
         }
-
-        /* 3 Ô Thống Kê */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 18px;
-        }
-        .stat-box {
-            padding: 11px 6px;
-            border-radius: 18px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .stat-box::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 18%;
-            right: 18%;
-            height: 2.5px;
-            border-radius: 99px;
-            background: linear-gradient(90deg, #38bdf8, #a855f7, #f97316);
-        }
-        .stat-label {
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--text-secondary);
-            margin-bottom: 3px;
-        }
-        .stat-num {
-            font-size: 16px;
-            font-weight: 900;
-            transition: transform 0.2s ease;
-        }
-        .stat-num.pop { transform: scale(1.25); }
 
         /* Ô Tìm Kiếm */
         .search-input {
@@ -589,14 +549,6 @@
         .pill-working {
             background: rgba(16, 185, 129, 0.16);
             color: #10b981;
-            padding: 2px 9px;
-            border-radius: 999px;
-            font-size: 11px;
-            font-weight: 800;
-        }
-        .pill-clicks {
-            background: rgba(249, 115, 22, 0.16);
-            color: #f97316;
             padding: 2px 9px;
             border-radius: 999px;
             font-size: 11px;
@@ -675,7 +627,6 @@
 
     <!-- =========================================================================
          1. MÀN HÌNH LOAD 3.5 GIÂY (INLINE CSS TRỰC TIẾP - LUÔN HIỆN 100%)
-         Bạn có thể sửa link ảnh trực tiếp ở src="" bên dưới hoặc ở CAI_DAT_WEB
          ========================================================================= -->
     <div id="loader-overlay" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at center, #131c38 0%, #050711 100%); z-index: 2147483647; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; opacity: 1; visibility: visible; transition: opacity 0.55s ease, visibility 0.55s ease;">
         <div style="position: relative; width: 132px; height: 132px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
@@ -755,7 +706,6 @@
                 <div class="fire-aura-inner"></div>
                 <div class="hood-ring">
                     <div class="avatar-circle">
-                        <!-- Bạn có thể sửa link trực tiếp ở src="" dưới đây hoặc ở CAI_DAT_WEB.logoDauTrang -->
                         <img id="main-avatar"
                              src="https://i.ibb.co/Qv68ykM6/A9-EF44-C3-5-C89-4-D03-BC39-BC355-B33-BD74.png"
                              alt="Avatar">
@@ -815,22 +765,6 @@
             </div>
         </div>
 
-        <!-- 3 Ô Thống Kê (Bắt đầu từ 0 & Tự nhảy thật trên GitHub) -->
-        <div class="stats-grid">
-            <div class="stat-box liquid-glass">
-                <div class="stat-label">Đã Truy Cập</div>
-                <div id="stat-visited" class="stat-num" style="color: #10b981;">0</div>
-            </div>
-            <div class="stat-box liquid-glass">
-                <div class="stat-label">🛡️ Bảo Mật</div>
-                <div class="stat-num" style="color: #38bdf8; font-size: 13.5px;">Undetected</div>
-            </div>
-            <div class="stat-box liquid-glass">
-                <div class="stat-label">Tổng Lấy Script</div>
-                <div id="stat-clicks" class="stat-num" style="color: #f97316;">0</div>
-            </div>
-        </div>
-
         <!-- Danh Mục Game VIP (Nút vuông chỉ hiện Logo: Liên Quân | Free Fire | 8 Ball Pool | Tất Cả) -->
         <div style="text-align: center; margin-bottom: 8px;">
             <div style="font-size: 15.5px; font-weight: 900; letter-spacing: 0.6px; text-transform: uppercase;">
@@ -876,7 +810,6 @@
             const loaderImg = document.getElementById("loader-img");
             const mainAvatar = document.getElementById("main-avatar");
 
-            // Hỗ trợ cả 2 cách: Sửa ở CAI_DAT_WEB hoặc sửa trực tiếp trong thẻ <img> HTML
             const htmlLoaderSrc = loaderImg ? loaderImg.getAttribute("src") : "";
             const htmlMainSrc = mainAvatar ? mainAvatar.getAttribute("src") : "";
 
@@ -898,7 +831,7 @@
 
             if (cfg.tenHienThi) {
                 document.getElementById("profile-name").textContent = cfg.tenHienThi;
-                document.getElementById("loader-title").textContent = cfg.tenHienThi; // Chỉ lấy đúng tên của bạn
+                document.getElementById("loader-title").textContent = cfg.tenHienThi;
             }
             if (cfg.dongChao) document.getElementById("profile-hi").textContent = cfg.dongChao;
             if (cfg.ngheNghiep) document.getElementById("profile-job").textContent = cfg.ngheNghiep;
@@ -917,7 +850,6 @@
 
             if (loaderTimer) clearInterval(loaderTimer);
 
-            // Hiển thị rõ màn hình load từ 0%
             overlay.style.display = "flex";
             overlay.style.opacity = "1";
             overlay.style.visibility = "visible";
@@ -927,7 +859,6 @@
             if (statusTxt) statusTxt.textContent = "Đang tải tài nguyên & bảo mật Anti-Ban...";
 
             let pct = 0;
-            // Đợi trình duyệt vẽ xong khung đầu tiên rồi đếm từ 0% -> 100% trong 3.5 giây
             setTimeout(() => {
                 loaderTimer = setInterval(() => {
                     pct += 1;
@@ -962,7 +893,6 @@
            2. HIỆU ỨNG TUYẾT RƠI (SNOWFALL CANVAS + BÔNG TUYẾT ❄ ❅ ❆)
            ========================================================================= */
         (function initSnowfallEffect() {
-            // Lớp 1: Bông tuyết tinh thể ❄ ❅ ❆
             const crystalLayer = document.getElementById("snow-crystal-layer");
             if (crystalLayer) {
                 const chars = ["❄", "❅", "❆", "•"];
@@ -980,7 +910,6 @@
                 }
             }
 
-            // Lớp 2: Hạt tuyết mịn Canvas 60fps (hiển thị cả trên màn hình Load)
             const canvas = document.getElementById("snowCanvas");
             if (!canvas) return;
             const ctx = canvas.getContext("2d");
@@ -1032,9 +961,8 @@
            ========================================================================= */
         const ALL_CAT = "__ALL__";
         let activeCategory = Object.keys((window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {})[0] || ALL_CAT;
-        const STORAGE_PREFIX = ((window.CAI_DAT_WEB && window.CAI_DAT_WEB.counterNamespace) || "phucaov_v1") + "_";
 
-                function getCategoryIconMarkup(catName, catObj) {
+        function getCategoryIconMarkup(catName, catObj) {
             if (catObj && catObj.icon && catObj.icon.trim() !== "") {
                 return `<div style="width: 42px; height: 42px; border-radius: 13px; overflow: hidden; display: flex; align-items: center; justify-content: center;"><img src="${catObj.icon.trim()}" alt="${catName}" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>`;
             }
@@ -1117,10 +1045,6 @@
             });
         }
 
-        function formatNum(n) {
-            return Number(n || 0).toLocaleString("en-US");
-        }
-
         function renderCards() {
             const container = document.getElementById("cards-container");
             if (!container) return;
@@ -1147,7 +1071,6 @@
 
             list.forEach((item, idx) => {
                 const itemId = item.id || ("item_" + idx);
-                const savedClicks = parseInt(localStorage.getItem(STORAGE_PREFIX + "item_" + itemId) || "0", 10);
                 const dlUrl = item.linkTai || item.downloadLink || "#";
                 const keyUrl = item.linkGetKey || item.keyLink || "#";
 
@@ -1173,7 +1096,6 @@
                     <div class="meta-row">
                         <span>📅 Ngày up: <strong>${item.date}</strong></span>
                         <span class="pill-working">Working</span>
-                        <span id="item-clicks-${itemId}" class="pill-clicks">🔥 ${formatNum(savedClicks)} lượt lấy</span>
                     </div>
                     <div class="script-title">${item.title}</div>
                     <div class="btn-grid">
@@ -1195,92 +1117,17 @@
             });
         }
 
-        /* =========================================================================
-           4. BỘ ĐẾM TRUY CẬP & LẤY SCRIPT THẬT BẮT ĐẦU TỪ 0 (TỰ NHẢY TRÊN GITHUB)
-           ========================================================================= */
-        let visitedCount = parseInt(localStorage.getItem(STORAGE_PREFIX + "visited") || "0", 10);
-        let totalClicksCount = parseInt(localStorage.getItem(STORAGE_PREFIX + "clicks") || "0", 10);
-
-        function updateCounterUI(popId) {
-            const vEl = document.getElementById("stat-visited");
-            const cEl = document.getElementById("stat-clicks");
-            if (vEl) vEl.textContent = formatNum(visitedCount);
-            if (cEl) cEl.textContent = formatNum(totalClicksCount);
-
-            if (popId) {
-                const target = document.getElementById(popId);
-                if (target) {
-                    target.classList.add("pop");
-                    setTimeout(() => target.classList.remove("pop"), 220);
-                }
-            }
-        }
-
-        async function initRealCounters() {
-            visitedCount += 1;
-            localStorage.setItem(STORAGE_PREFIX + "visited", visitedCount);
-            updateCounterUI("stat-visited");
-
-            const ns = encodeURIComponent((window.CAI_DAT_WEB && window.CAI_DAT_WEB.counterNamespace) || "phucaov_v1");
-            try {
-                const resV = await fetch(`https://api.counterapi.dev/v1/${ns}/visits/up`);
-                if (resV.ok) {
-                    const dataV = await resV.json();
-                    if (typeof dataV.count === "number") {
-                        visitedCount = Math.max(visitedCount, dataV.count);
-                        localStorage.setItem(STORAGE_PREFIX + "visited", visitedCount);
-                        updateCounterUI("stat-visited");
-                    }
-                }
-            } catch (e) {}
-
-            try {
-                const resC = await fetch(`https://api.counterapi.dev/v1/${ns}/clicks/`);
-                if (resC.ok) {
-                    const dataC = await resC.json();
-                    if (typeof dataC.count === "number") {
-                        totalClicksCount = Math.max(totalClicksCount, dataC.count);
-                        localStorage.setItem(STORAGE_PREFIX + "clicks", totalClicksCount);
-                        updateCounterUI();
-                    }
-                }
-            } catch (e) {}
-        }
-
-        async function handleScriptClick(itemId, label) {
-            totalClicksCount += 1;
-            localStorage.setItem(STORAGE_PREFIX + "clicks", totalClicksCount);
-            updateCounterUI("stat-clicks");
-
-            const itemKey = STORAGE_PREFIX + "item_" + itemId;
-            const nextVal = parseInt(localStorage.getItem(itemKey) || "0", 10) + 1;
-            localStorage.setItem(itemKey, nextVal);
-            const badge = document.getElementById("item-clicks-" + itemId);
-            if (badge) badge.textContent = "🔥 " + formatNum(nextVal) + " lượt lấy";
-
+        function handleScriptClick(itemId, label) {
             const toast = document.getElementById("toast-msg");
             if (toast) {
                 toast.textContent = "🚀 Đang mở " + label + "...";
                 toast.style.opacity = "1";
                 setTimeout(() => { toast.style.opacity = "0"; }, 1800);
             }
-
-            const ns = encodeURIComponent((window.CAI_DAT_WEB && window.CAI_DAT_WEB.counterNamespace) || "phucaov_v1");
-            try {
-                const res = await fetch(`https://api.counterapi.dev/v1/${ns}/clicks/up`);
-                if (res.ok) {
-                    const data = await res.json();
-                    if (typeof data.count === "number") {
-                        totalClicksCount = Math.max(totalClicksCount, data.count);
-                        localStorage.setItem(STORAGE_PREFIX + "clicks", totalClicksCount);
-                        updateCounterUI();
-                    }
-                }
-            } catch (e) {}
         }
 
         /* =========================================================================
-           5. ĐỒNG HỒ GIỜ VIỆT NAM, SÁNG/TỐI & NHẠC NỀN TỰ PHÁT KHI CHẠM
+           4. ĐỒNG HỒ GIỜ VIỆT NAM, SÁNG/TỐI & NHẠC NỀN TỰ PHÁT KHI CHẠM
            ========================================================================= */
         function updateClock() {
             const now = new Date();
@@ -1349,7 +1196,6 @@
         startLoadingSequence();
         renderCategories();
         renderCards();
-        initRealCounters();
     </script>
 </body>
 </html>
